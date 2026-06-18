@@ -6,7 +6,7 @@ header {
     display: flex;
     width: 70%;
     margin: 10% auto;
-    gap: 15%;
+    gap: 3rem;
 }
 
 h1, h2, p {
@@ -25,12 +25,12 @@ h1, h2, p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5%;
+    gap: 0.5rem;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5%;
+    gap: 1rem;
 }
