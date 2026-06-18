@@ -1,0 +1,36 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    width: 70%;
+    margin: 10% auto;
+    gap: 15%;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+}
