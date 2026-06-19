@@ -5,30 +5,73 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Connor Bailey</title>
-		
+		<script src="script.js" defer></script>
+
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 	</head>
 
 	<body>
 		<header>
 			<div class="column">
-				<img id="profile" src="img/profile.jpg" alt="Photo of Connor Bailey" />
+				<img id="profile" src="img/portrait.jpg" alt="Photo of Connor Bailey" />
 				<a href="mailto:cbbcbail@cs.wisc.edu">cbbcbail@cs.wisc.edu</a>
 				<div class="row">
-					<a target="_blank" rel="noopener noreferrer" href="https://github.com/cbbcbail">GitHub</a>
-					<a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=r9Kx2dIAAAAJ&hl=en">Scholar</a>
-					<a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-4926-7481">ORCiD</a>
+					<a href="https://github.com/cbbcbail" title="GitHub" aria-label="GitHub">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					<a href="https://scholar.google.com/citations?user=r9Kx2dIAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar">
+						<i class="fa-brands fa-google-scholar"></i>
+					</a>
+					<a href="https://orcid.org/0000-0002-4926-7481" title="ORCiD" aria-label="ORCiD">
+						<i class="fa-brands fa-orcid"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/connor-bailey-7a804871/" title="LinkedIn" aria-label="LinkedIn">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
 				</div>
 			</div>
 			<div class="column">
 				<h1>Connor Bailey</h1>
-				<h2>PhD Student at the University of Wisconsin - Madison</h2>
+				<p>I'm a Computer Science PhD student in the <a href="https://graphics.cs.wisc.edu/Papers/">Visual Computing Laboratory</a> at the <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, advised by <a href="https://gleicher.sites.cs.wisc.edu/">Michael Gleicher</a>.</p>
 				<p>My research develops computational methods to better understand how people perceive and interpret visual representations of large and complex datasets, with a focus on data subset selection and data summarization. I aim to leverage human perception to design visualizations that enable accurate interpretation.</p>
 			</div>
 		</header>
+		<main>
+			<h2>Research</h2>
+			<img src="img/partToWhole.png" alt="Paper Teaser Figure" height="200" />
+			<div>
+				<h3>Anchoring and Alignment: Data Factors in Part-to-Whole Visualization</h3>
+				<p><em>Connor Bailey</em> & Michael Gleicher</p>
+				<p>IEEE VIS '25</p>
+				<div  class="iconMenu">
+					<a href="https://doi.org/10.1109/VIS60296.2025.00033" title="DOI Link" aria-label="DOI Link">
+						<i class="ai ai-doi"></i>
+					</a>
+					<a href="https://arxiv.org/abs/2508.01881" title="arXiv Preprint" aria-label="arXiv Preprint">
+						<i class="ai ai-arxiv"></i>
+					</a>
+					<a href="https://pages.graphics.cs.wisc.edu/PartToWhole/PartWhole-Preprint.pdf" title="PDF Download" aria-label="PDF Download">
+						<i class="fa-solid fa-file-pdf"></i>
+					</a>
+					<a href="https://github.com/uwgraphics/PartToWhole" title="GitHub Repository" aria-label="GitHub Repository">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					<a href="https://youtu.be/FOAj5-NjQho" title="Conference Talk" aria-label="Conference Talk">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+					<a href="https://osf.io/e36au/" title="OSF Preregistration" aria-label="OSF Preregistration">
+						<i class="ai ai-osf"></i>
+					</a>
+				</div>
+				
+			</div>
+		</main>
 	</body>
 
 </html>

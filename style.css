@@ -5,12 +5,23 @@ body {
 header {
     display: flex;
     width: 70%;
+    margin: 8% auto;
+    gap: 3rem;
+}
+
+main {
+    display: flex;
+    width: 70%;
     margin: 10% auto;
     gap: 3rem;
 }
 
 h1, h2, p {
     margin: 0;
+}
+
+i, a {
+    color: rgb(8, 100, 139);
 }
 
 #profile {
@@ -31,6 +42,15 @@ h1, h2, p {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
+    font-size: 14pt;
+}
+
+.iconMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.5rem;
+    font-size: 14pt;
 }
