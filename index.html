@@ -2,26 +2,37 @@
 <html lang="en">
 
 	<head>
+		<!-- Metadata -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Connor Bailey is a Computer Science PhD student at UW-Madison studying perceptual and computational methods for data visualization.">
 		<title>Connor Bailey</title>
+
+		<!-- Import JavaScript -->
 		<script src="script.js" defer></script>
 
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<!-- Import CSS -->
+		<link rel="stylesheet" href="style.css" />
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+		<!-- Import Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1&display=swap" rel="stylesheet" />
+
+		<!-- Import Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 	</head>
 
 	<body>
 		<header>
 			<div class="column">
 				<img id="profile" src="img/portrait.jpg" alt="Photo of Connor Bailey" />
-				<a href="mailto:cbbcbail@cs.wisc.edu">cbbcbail@cs.wisc.edu</a>
-				<div class="row">
+				<div class="iconHeader">
+					<a href="mailto:cbbcbail@cs.wisc.edu" title="Email: cbbcbail@cs.wisc.edu" aria-label="Email: cbbcbail@cs.wisc.edu">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
 					<a href="https://github.com/cbbcbail" title="GitHub" aria-label="GitHub">
 						<i class="fa-brands fa-github"></i>
 					</a>
@@ -44,33 +55,36 @@
 		</header>
 		<main>
 			<h2>Research</h2>
-			<img class="teaser" src="img/partToWhole.png" alt="Paper Teaser Figure"/>
-			<div>
-				<h3>Anchoring and Alignment: Data Factors in Part-to-Whole Visualization</h3>
-				<p><em>Connor Bailey</em> & Michael Gleicher</p>
-				<p>IEEE VIS '25</p>
-				<div  class="iconMenu">
-					<a href="https://doi.org/10.1109/VIS60296.2025.00033" title="DOI Link" aria-label="DOI Link">
-						<i class="ai ai-doi"></i>
-					</a>
-					<a href="https://arxiv.org/abs/2508.01881" title="arXiv Preprint" aria-label="arXiv Preprint">
-						<i class="ai ai-arxiv"></i>
-					</a>
-					<a href="https://pages.graphics.cs.wisc.edu/PartToWhole/PartWhole-Preprint.pdf" title="PDF Download" aria-label="PDF Download">
-						<i class="fa-solid fa-file-pdf"></i>
-					</a>
-					<a href="https://github.com/uwgraphics/PartToWhole" title="GitHub Repository" aria-label="GitHub Repository">
-						<i class="fa-brands fa-github"></i>
-					</a>
-					<a href="https://youtu.be/FOAj5-NjQho" title="Conference Talk" aria-label="Conference Talk">
-						<i class="fa-brands fa-youtube"></i>
-					</a>
-					<a href="https://osf.io/e36au/" title="OSF Preregistration" aria-label="OSF Preregistration">
-						<i class="ai ai-osf"></i>
-					</a>
-				</div>
-				
-			</div>
+			<ul class="researchList">
+				<li class="researchBlock">
+					<img class="teaser" src="img/partToWhole.png" alt="Paper Teaser Figure"/>
+					<div class="researchText">
+						<h3>Anchoring and Alignment: Data Factors in Part-to-Whole Visualization</h3>
+						<p>Connor Bailey & Michael Gleicher</p>
+						<p>IEEE VIS '25</p>
+						<div class="iconResearch">
+							<a href="https://doi.org/10.1109/VIS60296.2025.00033" title="DOI Link" aria-label="DOI Link">
+								<i class="ai ai-doi"></i>
+							</a>
+							<a href="https://arxiv.org/abs/2508.01881" title="arXiv Preprint" aria-label="arXiv Preprint">
+								<i class="ai ai-arxiv"></i>
+							</a>
+							<a href="https://pages.graphics.cs.wisc.edu/PartToWhole/PartWhole-Preprint.pdf" title="PDF Download" aria-label="PDF Download">
+								<i class="fa-solid fa-file"></i>
+							</a>
+							<a href="https://github.com/uwgraphics/PartToWhole" title="GitHub Repository" aria-label="GitHub Repository">
+								<i class="fa-brands fa-github"></i>
+							</a>
+							<a href="https://youtu.be/FOAj5-NjQho" title="Conference Talk" aria-label="Conference Talk">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a href="https://osf.io/e36au/" title="OSF Preregistration" aria-label="OSF Preregistration">
+								<i class="ai ai-osf"></i>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</main>
 	</body>
 
