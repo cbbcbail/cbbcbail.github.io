@@ -4,6 +4,21 @@
     --tealLight: rgb(14, 130, 180);
 }
 
+/* Import Fonts */
+@font-face {
+  font-family: "Open Sans";
+  src: url("font/opensans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url("font/fraunces.woff2") format("woff2");
+    font-weight: 100 900;
+    font-display: swap;
+}
+
 /* Sections */
 body { font-family: "Open Sans", sans-serif; font-weight: 400; }
 header {
@@ -71,8 +86,9 @@ a:active { color: var(--tealLight); }
     flex-direction: column; 
     gap: 1.5rem; 
 }
+.icon { width: 1em; height: 1em; display: inline-block; fill: currentColor; }
 .researchBlock { display: flex; gap: 2rem; }
-.iconResearch { display: flex; gap: 0.5rem; font-size: 14pt; }
+.iconResearch { display: flex; gap: 0.8rem; font-size: 14pt; }
 .teaser { height: auto; max-width: 85%; min-width: 0; align-self: center; }
 
 #profile {

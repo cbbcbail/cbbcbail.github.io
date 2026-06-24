@@ -8,21 +8,15 @@
 		<meta name="description" content="Connor Bailey is a Computer Science PhD student at UW-Madison studying perceptual and computational methods for data visualization.">
 		<title>Connor Bailey</title>
 
-		<!-- Import JavaScript -->
-		<script src="script.js" defer></script>
+		<!-- Import Fonts -->
+		<link rel="preload" href="font/opensans.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="font/fraunces.woff2" as="font" type="font/woff2" crossorigin />
 
 		<!-- Import CSS -->
 		<link rel="stylesheet" href="style.css" />
 
-		<!-- Import Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1&display=swap" rel="stylesheet" />
-
-		<!-- Import Icons -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<!-- Import JavaScript -->
+		<script src="script.js" defer></script>
 	</head>
 
 	<body>
@@ -31,19 +25,29 @@
 				<img id="profile" src="img/portrait.jpg" alt="Photo of Connor Bailey" />
 				<div class="iconHeader">
 					<a href="mailto:cbbcbail@cs.wisc.edu" title="Email: cbbcbail@cs.wisc.edu" aria-label="Email: cbbcbail@cs.wisc.edu">
-						<i class="fa-solid fa-envelope"></i>
+						<svg class="icon" aria-hidden="true">
+							<use href="img/icons.svg#envelope"/>
+						</svg>
 					</a>
 					<a href="https://github.com/cbbcbail" title="GitHub" aria-label="GitHub">
-						<i class="fa-brands fa-github"></i>
+						<svg class="icon" aria-hidden="true">
+							<use href="img/icons.svg#github-alt"/>
+						</svg>
 					</a>
 					<a href="https://scholar.google.com/citations?user=r9Kx2dIAAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar">
-						<i class="fa-brands fa-google-scholar"></i>
+						<svg class="icon" aria-hidden="true">
+							<use href="img/icons.svg#google-scholar"/>
+						</svg>
 					</a>
 					<a href="https://orcid.org/0000-0002-4926-7481" title="ORCiD" aria-label="ORCiD">
-						<i class="fa-brands fa-orcid"></i>
+						<svg class="icon" aria-hidden="true">
+							<use href="img/icons.svg#orcid"/>
+						</svg>
 					</a>
 					<a href="https://www.linkedin.com/in/connor-bailey-7a804871/" title="LinkedIn" aria-label="LinkedIn">
-						<i class="fa-brands fa-linkedin"></i>
+						<svg class="icon" aria-hidden="true">
+							<use href="img/icons.svg#linkedin"/>
+						</svg>
 					</a>
 				</div>
 			</div>
@@ -51,6 +55,7 @@
 				<h1>Connor Bailey</h1>
 				<p>I'm a Computer Science PhD student in the <a href="https://graphics.cs.wisc.edu/Papers/">Visual Computing Laboratory</a> at the <a href="https://www.wisc.edu/">University of Wisconsin-Madison</a>, advised by <a href="https://gleicher.sites.cs.wisc.edu/">Michael Gleicher</a>.</p>
 				<p>My research develops computational methods to better understand how people perceive and interpret visual representations of large and complex datasets, with a focus on data subset selection and data summarization. I aim to leverage human perception to design visualizations that enable accurate interpretation.</p>
+				<p>I taught CS 400, the third course in UW-Madison's introductory programming sequence.</p>
 			</div>
 		</header>
 		<main>
@@ -64,22 +69,34 @@
 						<p>IEEE VIS '25</p>
 						<div class="iconResearch">
 							<a href="https://doi.org/10.1109/VIS60296.2025.00033" title="DOI Link" aria-label="DOI Link">
-								<i class="ai ai-doi"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#doi"/>
+								</svg>
 							</a>
 							<a href="https://arxiv.org/abs/2508.01881" title="arXiv Preprint" aria-label="arXiv Preprint">
-								<i class="ai ai-arxiv"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#arxiv"/>
+								</svg>
 							</a>
 							<a href="https://pages.graphics.cs.wisc.edu/PartToWhole/PartWhole-Preprint.pdf" title="PDF Download" aria-label="PDF Download">
-								<i class="fa-solid fa-file"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#file"/>
+								</svg>
 							</a>
 							<a href="https://github.com/uwgraphics/PartToWhole" title="GitHub Repository" aria-label="GitHub Repository">
-								<i class="fa-brands fa-github"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#git-alt"/>
+								</svg>
 							</a>
 							<a href="https://youtu.be/FOAj5-NjQho" title="Conference Talk" aria-label="Conference Talk">
-								<i class="fa-brands fa-youtube"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#video"/>
+								</svg>
 							</a>
 							<a href="https://osf.io/e36au/" title="OSF Preregistration" aria-label="OSF Preregistration">
-								<i class="ai ai-osf"></i>
+								<svg class="icon" aria-hidden="true">
+									<use href="img/icons.svg#osf"/>
+								</svg>
 							</a>
 						</div>
 					</div>
