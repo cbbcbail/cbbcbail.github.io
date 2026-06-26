@@ -1,7 +1,9 @@
+/* Color Variables */
 :root {
     --teal: rgb(8, 100, 139);
     --tealDark: rgb(8, 61, 83);
     --tealLight: rgb(14, 130, 180);
+    --black: rgba(0, 0, 0, 0.85);
 }
 
 /* Import Fonts */
@@ -9,7 +11,6 @@
   font-family: "Open Sans";
   src: url("font/opensans.woff2") format("woff2");
   font-weight: 100 900;
-  font-style: normal;
   font-display: swap;
 }
 @font-face {
@@ -20,7 +21,13 @@
 }
 
 /* Sections */
-body { font-family: "Open Sans", sans-serif; font-weight: 400; }
+body { 
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 400; 
+    color: var(--black); 
+    line-height: 1.4;
+    margin: 0;
+}
 header {
     display: flex;
     width: 65%;
@@ -30,7 +37,7 @@ header {
 main {
     display: flex;
     width: 75%;
-    margin: 8rem auto;
+    margin: 6rem auto;
     gap: 1.5rem;
     flex-direction: column;
 }
@@ -38,21 +45,21 @@ main {
 /* Text */
 h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; }
 h1 {
-    font-size: 32pt; 
+    font-size: 2.9rem; 
     font-weight: 700;
     font-variation-settings: "WONK" 1, "SOFT" 0; 
 }
 h2 {
-    font-size: 24pt; 
+    font-size: 2.2rem; 
     font-weight: 500;
     font-variation-settings: "WONK" 0, "SOFT" 80; 
 }
 h3 {
-    font-size: 18pt; 
+    font-size: 1.6rem; 
     font-variation-settings: "WONK" 0, "SOFT" 20; 
     font-weight: 400;
 }
-p { margin: 0; font-size: 12pt; }
+p { margin: 0; font-size: 1rem; }
 
 /* Anchors */
 a { color: var(--teal); transition: color 0.2s ease; }
@@ -70,7 +77,7 @@ a:active { color: var(--tealLight); }
     display: flex;
     justify-content: center;
     gap: 1rem;
-    font-size: 14pt;
+    font-size: 1.2rem;
 }
 .researchText { 
     display: flex; 
@@ -88,7 +95,7 @@ a:active { color: var(--tealLight); }
 }
 .icon { width: 1em; height: 1em; display: inline-block; fill: currentColor; }
 .researchBlock { display: flex; gap: 2rem; }
-.iconResearch { display: flex; gap: 0.8rem; font-size: 14pt; }
+.iconResearch { display: flex; gap: 0.8rem; font-size: 1.1rem; }
 .teaser { height: auto; max-width: 85%; min-width: 0; align-self: center; }
 
 #profile {
@@ -96,12 +103,13 @@ a:active { color: var(--tealLight); }
     width: 150px; 
     height: 150px;
     object-fit: cover;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 /* Media Query */
 @media (max-width: 1100px) {
-    header { flex-direction: column; align-items: center; width: 80%; }
-    main { flex-direction: column; width: 80%; }
-    .researchBlock { flex-direction: column-reverse;}
+    header, main { width: 80%; margin: 4rem auto; }
+    header { flex-direction: column; align-items: center; }
+    .researchBlock { flex-direction: column-reverse; }
+    .teaser { max-width: 100%; }
 }
