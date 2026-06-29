@@ -3,15 +3,16 @@
     --teal: rgb(8, 100, 139);
     --tealDark: rgb(8, 61, 83);
     --tealLight: rgb(14, 130, 180);
-    --black: rgba(0, 0, 0, 0.85);
+    --grayDark: rgba(0, 0, 0, 0.85);
+    --grayLight: rgb(243, 247, 247);
 }
 
 /* Import Fonts */
 @font-face {
-  font-family: "Open Sans";
-  src: url("fonts/opensans.woff2") format("woff2");
-  font-weight: 100 900;
-  font-display: swap;
+    font-family: "Open Sans";
+    src: url("fonts/opensans.woff2") format("woff2");
+    font-weight: 300 800;
+    font-display: swap;
 }
 @font-face {
     font-family: "Fraunces";
@@ -24,15 +25,14 @@
 body { 
     font-family: "Open Sans", sans-serif; 
     font-weight: 400; 
-    color: var(--black); 
+    color: var(--grayDark); 
     line-height: 1.4;
     margin: 0;
 }
 header {
-    display: flex;
-    width: 65%;
-    margin: 6rem auto;
-    gap: 3rem;
+    padding: 6rem 0;
+    margin: 0;
+    background-color: var(--grayLight);
 }
 main {
     display: flex;
@@ -43,21 +43,16 @@ main {
 }
 
 /* Text */
-h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; }
+h1, h2 { margin: 0; font-family: "Fraunces", serif; }
 h1 {
-    font-size: 2.9rem; 
+    font-size: 2.7rem; 
     font-weight: 700;
     font-variation-settings: "WONK" 1, "SOFT" 0; 
 }
 h2 {
-    font-size: 2.2rem; 
-    font-weight: 500;
-    font-variation-settings: "WONK" 0, "SOFT" 80; 
-}
-h3 {
-    font-size: 1.5rem; 
-    font-variation-settings: "WONK" 0, "SOFT" 20; 
+    font-size: 1.7rem; 
     font-weight: 400;
+    font-variation-settings: "WONK" 0, "SOFT" 80; 
 }
 p { margin: 0; font-size: 1rem; }
 
@@ -79,26 +74,32 @@ a:active { color: var(--tealLight); }
     gap: 1rem;
     font-size: 1.2rem;
 }
-.researchText { 
+.cardText { 
     display: flex; 
     flex-direction: column; 
     flex: 100%;
     gap: 0.25rem;
 }
-.researchList { 
+.cardList { 
     list-style: none; 
     padding: 0; 
     margin: 0; 
     display: flex; 
     flex-direction: column; 
-    gap: 1.5rem; 
+    gap: 3rem; 
 }
+.card { display: flex; gap: 2rem; }
 .icon { width: 1em; height: 1em; display: inline-block; fill: currentColor; }
-.researchBlock { display: flex; gap: 2rem; }
 .iconResearch { display: flex; gap: 0.8rem; font-size: 1.1rem; }
 .teaser { height: auto; max-width: 85%; min-width: 0; align-self: center; }
 .me { font-style: italic }
 
+#headerBox {
+    display: flex;
+    gap: 3rem;
+    width: 65%;
+    margin: 0 auto;
+}
 #profile {
     border-radius: 50%;
     width: 150px; 
@@ -109,8 +110,9 @@ a:active { color: var(--tealLight); }
 
 /* Media Query */
 @media (max-width: 1100px) {
-    header, main { width: 80%; margin: 4rem auto; }
-    header { flex-direction: column; align-items: center; }
-    .researchBlock { flex-direction: column-reverse; }
+    main { width: 80%; margin: 4rem auto; }
+    header { padding: 3rem 0; }
+    #headerBox { width: 75%; flex-direction: column; align-items: center; }
+    .card { flex-direction: column-reverse; }
     .teaser { max-width: 100%; }
 }
